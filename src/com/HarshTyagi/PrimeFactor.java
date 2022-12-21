@@ -2,7 +2,20 @@ package com.HarshTyagi;
 
 public class PrimeFactor {
     public static void main(String[] args) {
+          printPrimeFactor(6);
 
+    }
+    public static void printPrimeFactor(int n){
+        for(int i =2;i<n;i++){
+            if(isprime(i)){
+                int x =i;
+                while(n%x==0){
+                    System.out.println(i);
+                    x = x*i;
+                }
+            }
+        }
+        
     }
     public static boolean isprime(int n) {
         if (n == 1)
